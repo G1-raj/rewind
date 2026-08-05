@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rewind/app/theme/theme.dart';
 import 'package:rewind/shared/widgets/custom_button/custom_button.dart';
@@ -159,7 +160,9 @@ class _SigninScreenState extends State<SigninScreen> {
       children: [
         Text("Don't have an account?"),
         TextButton(
-          onPressed: () {}, 
+          onPressed: () {
+            context.push('/signup');
+          }, 
           child: Text("Sign Up", style: GoogleFonts.inter(
             color: AppTheme.theme,
             fontWeight: FontWeight.w600

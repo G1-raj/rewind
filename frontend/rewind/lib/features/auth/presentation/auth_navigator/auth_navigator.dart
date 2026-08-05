@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rewind/app/theme/theme.dart';
 import 'package:rewind/shared/widgets/custom_button/custom_button.dart';
@@ -54,7 +55,9 @@ class AuthNavigator extends StatelessWidget {
                   textSize: 18.0,
                   isGradient: true,
                   gradientColors: [AppTheme.gradientOne, AppTheme.gradientTwo],
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push('/signup');
+                  },
                 ),
           
                 const SizedBox(height: 20,),
@@ -68,7 +71,9 @@ class AuthNavigator extends StatelessWidget {
                   buttonColor: AppTheme.white, 
                   textColor: AppTheme.heading, 
                   textSize: 18.0,
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push('/signin');
+                  },
                 ),
           
                 const SizedBox(
