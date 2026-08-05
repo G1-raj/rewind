@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:rewind/features/auth/presentation/auth_navigator/auth_navigator.dart';
 import 'package:rewind/features/auth/presentation/signin_screen/signin_screen.dart';
+import 'package:rewind/features/auth/presentation/signup_screen/signup_screen.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/auth_navigator',
@@ -18,7 +19,7 @@ final GoRouter router = GoRouter(
 
     GoRoute(
       path: '/signup',
-      builder: (context, state) => SigninScreen(),
+      builder: (context, state) => SignupScreen(),
     )
   ]
 );
