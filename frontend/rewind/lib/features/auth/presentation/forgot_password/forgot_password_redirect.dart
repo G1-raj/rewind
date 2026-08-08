@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rewind/app/theme/theme.dart';
 import 'package:rewind/shared/widgets/custom_button/custom_button.dart';
@@ -55,7 +56,9 @@ class ForgotPasswordRedirect extends StatelessWidget {
                   textSize: 18.0,
                   isGradient: true,
                   gradientColors: [AppTheme.gradientOne, AppTheme.gradientTwo],
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push('/change_password');
+                  },
                 ),
               ],
             ),

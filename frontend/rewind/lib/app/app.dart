@@ -24,7 +24,10 @@ class MyApp extends StatelessWidget {
 //       theme: ThemeData.light(),
 //       // home: AuthNavigator(),
 //       // home: SigninScreen(),
-//       home: SignupScreen(),
+//       // home: SignupScreen(),
+//       // home: ForgotPasswordSendMail(),
+//       // home: ForgotPasswordRedirect(),
+//       home: ChangePassword(),
 //     );
 //   }
 // }

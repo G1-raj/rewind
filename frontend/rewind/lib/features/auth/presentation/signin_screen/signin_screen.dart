@@ -94,7 +94,9 @@ class _SigninScreenState extends State<SigninScreen> {
                     child: Padding(
                       padding: const EdgeInsets.only(right: 8.0),
                       child: TextButton(
-                        onPressed: () {}, 
+                        onPressed: () {
+                          context.push('/forgot_password_send_mail');
+                        }, 
                         child: Text(
                           "Forgot Password?",
                           style: GoogleFonts.inter(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rewind/app/theme/theme.dart';
 import 'package:rewind/shared/widgets/custom_button/custom_button.dart';
@@ -77,13 +78,17 @@ class _ForgotPasswordSendMailState extends State<ForgotPasswordSendMail> {
                   textSize: 18.0,
                   isGradient: true,
                   gradientColors: [AppTheme.gradientOne, AppTheme.gradientTwo],
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push('/forgot_password_redirect');
+                  },
                 ),
 
                 const SizedBox(height: 60,),
 
                 TextButton(
-                  onPressed: () {}, 
+                  onPressed: () {
+                    context.pop();
+                  }, 
                   child: Text(
                     "Back to sign in",
                     style: TextStyle(
